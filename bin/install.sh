@@ -29,7 +29,7 @@ _check_root
 _install_curl
 
 cd /tmp
-curl ftp://ftp.b/linux/${RELEASE}.tar.gz | tar xz
+curl file:///tmp/${RELEASE}.tar.gz | tar xz
 mkdir -p /opt/node_exporter
 mv ${RELEASE}/node_exporter /opt/node_exporter/
 rm -rf /tmp/${RELEASE}
